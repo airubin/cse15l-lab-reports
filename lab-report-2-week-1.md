@@ -35,7 +35,17 @@ Yay! We're in! Now to actually run some commands.
 
 ## **IV. Moving files with `scp`**
 Okay, so now you have some files on YOUR computer that you want to use on the remote one. How can we do this? With `scp`! This command lets us copy files from our local directory to the remote one. Here's how to do it!
-1. Either create or locate the file you want on the remote 
+1. Leave the ssh by typing the command `exit`
+2. Either create or locate the file you want on the remote computer, and navigate to the directory it is in with `cd`
+3. Enter the following command (but with your info) to move the file
+```diff
+scp FileName.java cs15lfa22xx@ieng6.ucsd.edu:~/
+```
+4. You should be prompted to enter your remote access password, do so, and hit enter
+5. The file should now be copied, to make sure, log into the ssh and use the `ls` command
+&nbsp;
+
+![Image](SCP.png)
 &nbsp;
 
 ## **V. Setting an SSH Key**
