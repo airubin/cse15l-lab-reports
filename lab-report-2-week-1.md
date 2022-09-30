@@ -13,11 +13,24 @@ The first step you need to take is installing an IDE called VS Code.
 &nbsp;
 
 ## **II. Remotely Connecting**
-
+Now that we have VS Code installed, we can use it to remotely connect to the university's computers.
+1. In the menu bar of VS Code there is an option called 'Terminal', click this, then open a new terminal
+![Image](TerminalWindow.png)
+2. In the terminal, type `ssh cs15lfa22__@ieng6.ucsd.edu`
+3. You should then be prompted to enter your ETS password *(Note: when typing, there is no feedback, it will look like you are not typing anything)*
+4. Hit enter, and after a second, a message will appear confirming that you have successfully connected!
+![Image](LoggingInSSH.png)
 &nbsp;
 
 ## **III. Trying Some Commands**
+Yay! We're in! Now to actually run some commands.
+1. To explore the file system of the remote connection, there's a couple commands we can use.
 
++ `cd ~` to change the directory to the home directory
++ `ls` to list the files in the current directory
++ `cat <file>` to output the contents of a given file
++ `pwd` to print where in the directory you are
+![Image](Commands.png)
 &nbsp;
 
 ## **IV. Moving files with `scp`**
