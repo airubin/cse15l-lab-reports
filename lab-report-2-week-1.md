@@ -65,5 +65,9 @@ Typing in our password everytime we want to access to ssh gets annoying and tedi
 &nbsp;
 
 ## **VI. Optimizing Remote Running**
+Now that we can login without a password, working with the ssh is a lot quicker. 
++ To directly run a command in the ssh, we can enter it in quotes at the end of the login command
+e.g. `ssh cs15lfa22xx@ieng6.ucsd.edu "ls"`
++ 
 
 &nbsp;
