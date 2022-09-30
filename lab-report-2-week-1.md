@@ -34,7 +34,8 @@ Yay! We're in! Now to actually run some commands.
 &nbsp;
 
 ## **IV. Moving files with `scp`**
-
+Okay, so now you have some files on YOUR computer that you want to use on the remote one. How can we do this? With `scp`! This command lets us copy files from our local directory to the remote one. Here's how to do it!
+1. Either create or locate the file you want on the remote 
 &nbsp;
 
 ## **V. Setting an SSH Key**
