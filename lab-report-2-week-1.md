@@ -10,6 +10,7 @@ The first step you need to take is installing an IDE called VS Code.
 2. Once it's done downloading, find it in your downloads folder, and double click to open.
 ![Image](VSCodePackage.png)
 3. Follow the on screen directions to install on your computer!
+
 &nbsp;
 
 ## **II. Remotely Connecting**
@@ -20,6 +21,7 @@ Now that we have VS Code installed, we can use it to remotely connect to the uni
 3. You should then be prompted to enter your ETS password *(Note: when typing, there is no feedback, it will look like you are not typing anything)*
 4. Hit enter, and after a second, a message will appear confirming that you have successfully connected!
 ![Image](LoggingInSSH.png)
+
 &nbsp;
 
 ## **III. Trying Some Commands**
@@ -31,6 +33,7 @@ Yay! We're in! Now to actually run some commands.
 + `cat <file>` to output the contents of a given file
 + `pwd` to print where in the directory you are
 ![Image](Commands.png)
+
 &nbsp;
 
 ## **IV. Moving files with `scp`**
@@ -43,9 +46,11 @@ scp FileName.java cs15lfa22xx@ieng6.ucsd.edu:~/
 ```
 4. You should be prompted to enter your remote access password, do so, and hit enter
 5. The file should now be copied, to make sure, log into the ssh and use the `ls` command
+
 &nbsp;
 
 ![Image](SCP.png)
+
 &nbsp;
 
 ## **V. Setting an SSH Key**
