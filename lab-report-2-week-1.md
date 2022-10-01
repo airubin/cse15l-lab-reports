@@ -66,8 +66,11 @@ Typing in our password everytime we want to access to ssh gets annoying and tedi
 
 ## **VI. Optimizing Remote Running**
 Now that we can login without a password, working with the ssh is a lot quicker. 
-+ To directly run a command in the ssh, we can enter it in quotes at the end of the login command
-e.g. `ssh cs15lfa22xx@ieng6.ucsd.edu "ls"`
-+ 
+1. When editing a file locally, it can quickly be copied to the remote computer with scp and shortcuts
+2. After editing a given file in VS Code, I can compile and save it, and then use the command `scp FILENAME.java cs15lfa22xx@ieng6.ucsd.edu:~/` to copy it over
+3. For subsequent edits, I can just use the up arrow in the terminal to call up my previous command.
+
+![Image](Optimize.png)
+
 
 &nbsp;
