@@ -125,6 +125,23 @@ This bug causes the method to return an array of 0s because it was setting the c
 ![Image](SumWOLowestFail.png)
 In this method, the bug is that it removes ALL instances of the lowest number, rather than just one instance of it. Additionally, despite how many times the lowest number appears, when dividing the find the average, the method always divides by length-1.
 ### Here is my fix:
+```diff
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
 
+    double sum = 0;
+    for(double num: arr) {
+       sum += num; 
+    }
+    sum -= lowest;
+
+    return sum / (arr.length - 1);
+  }
+```
 ### Symptom & Bug Connection
 
