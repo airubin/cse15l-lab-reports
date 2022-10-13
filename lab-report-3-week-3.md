@@ -61,21 +61,30 @@ class SearchEngine {
 Here is the 'simplest search engine' in use!
 ### Example: Adding 'apple'
 ![Using Add](AddApple.png)
-#### Method Called:
-#### Relevant Values:
-#### How Values Change:
+#### *Method Called*
+The method `handleRequest` is called to add apple to the list. 
+#### *Relevant Values:*
+In this method, the url `localhost:4000/add?s=apple` is passed into the parameter `URI url`. 
+#### *How Values Change:*
+Once it is recognized that the url contains "/add", the url is split to figure out exactly what to add the class variable `strings`. In this case, "apple" is added to this list because it is what comes after the "="
 
 ### Example: Adding 'pineapple'
 ![Using Add](AddPineapple.png)
 #### Method Called:
-#### Relevant Values:
-#### How Values Change:
+The method `handleRequest` is called to add pineapple to the list. 
+#### *Relevant Values:*
+In this method, the url `localhost:4000/add?s=pineapple` is passed into the parameter `URI url`.
+#### *How Values Change:*
+Once it is recognized that the url contains "/add", the url is split to figure out exactly what to add the class variable `strings`. In this case, "pineapple" is added to this list because it is what comes after the "="
 
 ### Example: Searching 'app'
 ![Using Search](SearchApp.png)
-#### Method Called:
-#### Relevant Values:
-#### How Values Change:
+#### *Method Called:*
+The method `handleRequest` is called to search for app in the list. 
+#### *Relevant Values:*
+In this method, the url `localhost:4000/search?s=app` is passed into the parameter `URI url`.
+#### *How Values Change:*
+When the query is search, the class variable does not change. 
 
 # Part Two
 ## **I. Bug One: ArrayExamples 'reversed'** ##
@@ -144,4 +153,4 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 ### Symptom & Bug Connection
-
+The bug causes the method to return the incorrect average because it is not correctly removing and summing. The bug in the original method removes every instance of the lowest value, meaning the total sum is lower than it should be. Then, when dividing the sum by the amount of numbers added, it only subtracts one, not the amount that was actually removed. 
