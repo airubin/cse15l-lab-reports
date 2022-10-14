@@ -17,7 +17,7 @@ The first step you need to take is installing an IDE called VS Code.
 Now that we have VS Code installed, we can use it to remotely connect to the university's computers.
 1. In the menu bar of VS Code there is an option called 'Terminal', click this, then open a new terminal
 ![Image](TerminalWindow.png)
-2. In the terminal, type `ssh cs15lfa22__@ieng6.ucsd.edu`
+2. In the terminal, type `ssh cs15lfa22__@ieng6.ucsd.edu` (where the __ is your personal login ID letters, e.g. aa, ke, xx)
 3. You should then be prompted to enter your ETS password *(Note: when typing, there is no feedback, it will look like you are not typing anything)*
 4. Hit enter, and after a second, a message will appear confirming that you have successfully connected!
 ![Image](LoggingInSSH.png)
@@ -66,9 +66,10 @@ Typing in our password everytime we want to access to ssh gets annoying and tedi
 
 ## **VI. Optimizing Remote Running**
 Now that we can login without a password, working with the ssh is a lot quicker. 
-1. When editing a file locally, it can quickly be copied to the remote computer with scp and shortcuts
-2. After editing a given file in VS Code, I can compile and save it, and then use the command `scp FILENAME.java cs15lfa22xx@ieng6.ucsd.edu:~/` to copy it over
-3. For subsequent edits, I can just use the up arrow in the terminal to call up my previous command.
+1. After editing a given file in VS Code, I can compile and save it, and then use the command `scp FILENAME.java cs15lfa22xx@ieng6.ucsd.edu:~/` to copy it over
+2. For subsequent edits, I can just use the up arrow in the terminal to call up my previous command.
+3. To run multiple commands at once, the semicolon can be used inbetween commands
+4. At the end of an `ssh` command, you can put a command in quotes in order to run it directly on the server
 
 ![Image](Optimize.png)
 
